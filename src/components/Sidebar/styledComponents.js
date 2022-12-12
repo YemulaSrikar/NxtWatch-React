@@ -61,3 +61,11 @@ export const NavLink = styled(Link)`
   margin-bottom: 15px;
   color: ${props => props.linkcolor};
 `
+export const IconsHomeCont = styled.div`
+  display: flex;
+`
+export const Icons = styled.i`
+  font-size: 20px;
+  margin-right: 15px;
+  color: ${props => props.iconcolor};
+`
