@@ -29,6 +29,7 @@ class Sidebar extends Component {
 
           const bgColor = isDarkTheme ? '#000000' : '#ffffff'
           const linkcolor = isDarkTheme ? '#ffffff' : '#000000'
+          const iconcolor = isDarkTheme ? '#ffffff' : '#000000'
 
           /* const activeTab = isActive ? 'blue' : null */
 
@@ -36,25 +37,47 @@ class Sidebar extends Component {
             <SidebarContainer bgColor={bgColor}>
               <NavLinksList>
                 <NavLinkItem onClick={this.isHomeActive}>
-                  <NavLink linkcolor={linkcolor} to="/">
-                    Home
-                  </NavLink>
+                  <IconsHomeCont>
+                    <Icons iconcolor={iconcolor}>
+                      <AiOutlineHome />
+                    </Icons>
+                    <NavLink linkcolor={linkcolor} to="/">
+                      Home
+                    </NavLink>
+                  </IconsHomeCont>
                 </NavLinkItem>
 
                 <NavLinkItem>
-                  <NavLink linkcolor={linkcolor} to="/trending">
-                    Trending
-                  </NavLink>
+                  <IconsHomeCont>
+                    <Icons iconcolor={iconcolor}>
+                      <AiOutlineFire />
+                    </Icons>
+                    <NavLink linkcolor={linkcolor} to="/trending">
+                      Trending
+                    </NavLink>
+                  </IconsHomeCont>
                 </NavLinkItem>
+
                 <NavLinkItem>
-                  <NavLink linkcolor={linkcolor} to="/gaming">
-                    Gaming
-                  </NavLink>
+                  <IconsHomeCont>
+                    <Icons iconcolor={iconcolor}>
+                      <SiYoutubegaming />
+                    </Icons>
+                    <NavLink linkcolor={linkcolor} to="/gaming">
+                      Gaming
+                    </NavLink>
+                  </IconsHomeCont>
                 </NavLinkItem>
+
                 <NavLinkItem>
-                  <NavLink linkcolor={linkcolor} to="/saved-videos">
-                    Saved Videos
-                  </NavLink>
+                  <IconsHomeCont>
+                    <Icons iconcolor={iconcolor}>
+                      <GiSaveArrow />
+                    </Icons>
+                    <NavLink linkcolor={linkcolor} to="/saved-videos">
+                      Saved Videos
+                    </NavLink>
+                  </IconsHomeCont>
                 </NavLinkItem>
               </NavLinksList>
 
