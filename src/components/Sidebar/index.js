@@ -1,4 +1,7 @@
 import {Component} from 'react'
+import {AiOutlineHome, AiOutlineFire} from 'react-icons/ai'
+import {SiYoutubegaming} from 'react-icons/si'
+import {GiSaveArrow} from 'react-icons/gi'
 import {
   NavLink,
   SidebarContainer,
@@ -8,6 +11,8 @@ import {
   ImageContainer,
   Desc,
   LogosImage,
+  Icons,
+  IconsHomeCont,
 } from './styledComponents'
 import VideoContext from '../../context/VideoContext'
 
